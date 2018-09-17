@@ -5,3 +5,15 @@ Lunr enables you to provide a great search experience in your documentation site
 
 https://antora.org[Antora] is a modular static site generator designed for creating documentation sites from AsciiDoc documents.
 Its site generator pipeline aggregates documents from versioned content repositories and processes them using https://asciidoctor.org[Asciidoctor].
+
+== Usage
+
+Install the site generator.
+Open a terminal and type:
+
+ $ npm install antora-site-generator-lunr
+
+When generating your documentation site, use the `--generator` option:
+
+ $ DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora site.yml --generator antora-site-generator-lunr
+
