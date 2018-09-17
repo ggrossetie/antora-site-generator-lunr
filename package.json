@@ -1,0 +1,51 @@
+{
+  "name": "antora-site-generator-lunr",
+  "version": "1.1.1",
+  "description": "An Antora's site generator that produces a Lunr index.",
+  "license": "MIT",
+  "author": "Guillaume Grossetie (https://github.com/Mogztter)",
+  "contributors": [
+    "Guillaume Grossetie <ggrossetie@yuzutech.fr>"
+  ],
+  "homepage": "https://antora.org",
+  "repository": "https://github.com/Mogztter/antora-site-generator-lunr",
+  "bugs": {
+    "url": "https://github.com/Mogztter/antora-site-generator-lunr/issues"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@antora/asciidoc-loader": "1.1.1",
+    "@antora/content-aggregator": "1.1.1",
+    "@antora/content-classifier": "1.1.1",
+    "@antora/document-converter": "1.1.1",
+    "@antora/navigation-builder": "1.1.1",
+    "@antora/page-composer": "1.1.1",
+    "@antora/playbook-builder": "1.1.1",
+    "@antora/redirect-producer": "1.1.1",
+    "@antora/site-mapper": "1.1.1",
+    "@antora/site-publisher": "1.1.1",
+    "@antora/ui-loader": "1.1.1",
+    "antora-lunr": "0.1.0",
+    "lunr": "2.2.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.0"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "files": [
+    "lib/"
+  ],
+  "keywords": [
+    "antora",
+    "antora-component",
+    "generator",
+    "pipeline",
+    "documentation",
+    "static site",
+    "web publishing",
+    "lunr",
+    "search engine"
+  ]
+}

@@ -1,0 +1,7 @@
+= Antora Site Generator With Lunr
+
+This site generator is a copy of the https://gitlab.com/antora/antora/blob/master/packages/site-generator-default/README.adoc[default site generator] that in addition produces a Lunr index that can be used in your documentation UI.
+Lunr enables you to provide a great search experience in your documentation site without the need for external, server-side, search services.
+
+https://antora.org[Antora] is a modular static site generator designed for creating documentation sites from AsciiDoc documents.
+Its site generator pipeline aggregates documents from versioned content repositories and processes them using https://asciidoctor.org[Asciidoctor].
