@@ -19,6 +19,6 @@ Open a terminal and type:
 
 When generating your documentation site, use the `--generator` option:
 
-  $ DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora site.yml --generator antora-site-generator-lunr
+    $ DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora site.yml --generator antora-site-generator-lunr
 
 Please read the [documentation](https://github.com/Mogztter/antora-lunr#enable-the-search-component-in-the-ui) to enable the search component in your documentation UI.
