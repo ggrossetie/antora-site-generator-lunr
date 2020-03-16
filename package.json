@@ -28,7 +28,7 @@
     "antora-lunr": "0.5.0"
   },
   "devDependencies": {
-    "fs-extra": "^7.0.0"
+    "fs-extra": "^8.1.0"
   },
   "engines": {
     "node": ">= 8.0.0"
