@@ -11,14 +11,14 @@ Its site generator pipeline aggregates documents from versioned content reposito
 Install the site generator.
 Open a terminal and type:
 
-    $ npm i antora-site-generator-lunr
-
-**NOTE:** If Antora is installed globally, you should also add this module globally using the `-g` flag:
-
     $ npm i -g antora-site-generator-lunr
 
 When generating your documentation site, use the `--generator` option:
 
-    $ DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora site.yml --generator antora-site-generator-lunr
+    $ DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --generator antora-site-generator-lunr site.yml
+
+**NOTE:** The `NODE_PATH` assignment is necessary to ensure Antora can locate node modules install globally.
+Depending on your environment, you may find that this assignment is unnecessary.
+If you've installed Antora globally using Yarn, you may need to add `"$(yarn global dir)/node_modules"` to the `NODE_PATH` environment variable instead.
 
 Please read the [documentation](https://github.com/Mogztter/antora-lunr#enable-the-search-component-in-the-ui) to enable the search component in your documentation UI.
