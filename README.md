@@ -36,4 +36,4 @@ To upgrade this site generator and Antora, open a terminal and type the followin
     $ npm uninstall -g antora-site-generator-lunr @antora/cli @antora/site-generator-default
       npm i -g antora-site-generator-lunr @antora/cli @antora/site-generator-default
 
-These commands ensure you have the latest version of both the site genernator and Antora regardess of whether you're using this site generator.
+These commands ensure you have the latest version of both the site generator and Antora regardless of whether you're using this site generator.
