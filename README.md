@@ -1,6 +1,7 @@
 # Antora Site Generator With Lunr
 
 [![npm](https://img.shields.io/npm/v/antora-site-generator-lunr)](https://www.npmjs.com/package/antora-site-generator-lunr)
+[![Build](https://github.com/Mogztter/antora-site-generator-lunr/workflows/Build/badge.svg)](https://github.com/Mogztter/antora-site-generator-lunr/actions?query=workflow%3ABuild)
 
 This site generator is a copy of the [default site generator](https://gitlab.com/antora/antora/blob/master/packages/site-generator-default/README.adoc) that in addition produces a Lunr index that can be used in your documentation UI.
 Lunr provides a great search experience in your documentation site without the need for external, server-side, search services.
