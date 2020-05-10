@@ -30,7 +30,7 @@
     "@antora/ui-loader": "~2"
   },
   "dependencies": {
-    "antora-lunr": "0.7.0"
+    "antora-lunr": "0.7.1"
   },
   "devDependencies": {
     "@antora/asciidoc-loader": "~2",
