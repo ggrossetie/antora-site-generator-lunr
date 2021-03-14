@@ -5,4 +5,8 @@ ENV DOCSEARCH_ENABLED=true \
 
 RUN yarn global add antora-site-generator-lunr 
 
-CMD ["antora","--generator","antora-site-generator-lunr"]
+COPY docker-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+CMD ["antora"]
