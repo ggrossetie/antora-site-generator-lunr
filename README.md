@@ -26,6 +26,18 @@ If you've installed Antora globally using Yarn, you may need to add `"$(yarn glo
 
 Please read the [documentation](https://github.com/Mogztter/antora-lunr#enable-the-search-component-in-the-ui) to enable the search component in your documentation UI.
 
+### Using the Docker image
+
+[The docker image](https://hub.docker.com/r/adito5393/antora-v2.3.4-lunr) is build upon [the Antora`s official docker image](https://docs.antora.org/antora/2.3/antora-container/#run-the-antora-image) and should be used as a replacement. For example, instead of running:
+
+    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora:2.3.4 antora-playbook.yml
+
+You will run:
+
+    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t adito5393/antora-v2.3.4-lunr antora-playbook.yml
+
+The image contains the environment variables `DOCSEARCH_ENABLED=true` and `DOCSEARCH_ENGINE=lunr` set by default. You can [overwrite any variable](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) when executing `docker run`, for example `docker run --env DOCSEARCH_ENABLED=false ...`. Moreover, the selection of the site generator (i.e. `--generator antora-site-generator-lunr`) is done automatically at the entry-point.
+
 ## Upgrading
 
 When installing this generator globally (i.e., `npm i -g`), it also installs a private copy of Antora (minus the CLI).
