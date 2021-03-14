@@ -28,7 +28,7 @@ Please read the [documentation](https://github.com/Mogztter/antora-lunr#enable-t
 
 ### Using the Docker image
 
-[The docker image](https://hub.docker.com/r/adito5393/antora-v2.3.4-lunr) is build upon [the Antora`s official docker image](https://docs.antora.org/antora/2.3/antora-container/#run-the-antora-image) and should be used as a replacement. For example, instead of running:
+[The docker image](https://hub.docker.com/r/adito5393/antora-v2.3.4-lunr) is build upon [the Antora's official docker image](https://docs.antora.org/antora/2.3/antora-container/#run-the-antora-image) and should be used as a replacement. For example, instead of running:
 
     $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora:2.3.4 antora-playbook.yml
 
