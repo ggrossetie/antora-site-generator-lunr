@@ -12,4 +12,4 @@
 
 ## License
 
-[MIT License](https://github.com/Mogztter/antora-site-generator-lunr/blob/master/LICENSE)
+MIT License. See [License](https://github.com/Mogztter/antora-site-generator-lunr/blob/master/LICENSE) for more details.
