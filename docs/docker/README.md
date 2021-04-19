@@ -18,9 +18,38 @@ In order to run this container you'll need docker installed.
 
 ## Usage
 
-**Generate a site from a playbook file**
+**Generate a site using a specific playbook**
 
-    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t ggrossetie/antora-lunr:latest antora-playbook.yml
+    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t ggrossetie/antora-lunr:latest site.yml
+
+In the above example, we generate a site using a playbook file named `site.yml`.
+You can also specify a playbook file using a relative path (i.e., `path/to/site.yml`).
+
+**Note:** If you do not specify a playbook file, the container will try to build a site using a playbook file named `antora-playbook.yml`.
+
+    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t ggrossetie/antora-lunr:latest
+
+The above command will build a site with Antora using a playbook file named `antora-playbook.yml`.
+
+**Generate a site using additional CLI options**
+
+You can add any option supported by the Antora CLI.
+In the following example we are using `--attribute` and `--stacktrace`.
+
+    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t ggrossetie/antora-lunr:latest --attribute foo=bar --stacktrace site.yml
+
+**Override antora command**
+
+By default, the container is using the following command:
+
+    $ antora --generator antora-site-generator-lunr
+
+If for some reason you want to overidde this command you can use the `--entrypoint` option:
+
+    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm --entrypoint="" -t ggrossetie/antora-lunr:latest antora --version
+
+In the above example, we reset the container entrypoint using `--entrypoint=""` and then we can provide our own command.
+In this case, we are using the command `antora --version`.
 
 ## Environment Variables
 
