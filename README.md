@@ -36,7 +36,11 @@ You will run:
 
     $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t adito5393/antora-v2.3.4-lunr antora-playbook.yml
 
-The image contains the environment variables `DOCSEARCH_ENABLED=true` and `DOCSEARCH_ENGINE=lunr` set by default. You can [overwrite any variable](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) when executing `docker run`, for example `docker run --env DOCSEARCH_ENABLED=false ...`. Moreover, the selection of the site generator (i.e. `--generator antora-site-generator-lunr`) is done automatically at the entry-point.
+The image sets `DOCSEARCH_ENABLED=true` and `DOCSEARCH_ENGINE=lunr` environment variables. When executing `docker run`, you can [overwrite any variable](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) defined in the image. For example:
+
+    $ docker run --env DOCSEARCH_ENABLED=false # ...
+
+Moreover, the site generator is automatically configured on the `antora` command (i.e. `--generator antora-site-generator-lunr`).
 
 ## Upgrading
 
