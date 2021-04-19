@@ -28,15 +28,18 @@ Please read the [documentation](https://github.com/Mogztter/antora-lunr#enable-t
 
 ### Using the Docker image
 
-[The Docker image](https://hub.docker.com/r/adito5393/antora-v2.3.4-lunr) is built upon [the Antora's official Docker image](https://docs.antora.org/antora/2.3/antora-container/#run-the-antora-image) and should be used as a replacement. For example, instead of running:
+[The Docker image](https://hub.docker.com/r/ggrossetie/antora-lunr) is built upon [the Antora's official Docker image](https://docs.antora.org/antora/2.3/antora-container/#run-the-antora-image) and should be used as a replacement.
+For example, instead of running:
 
     $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t antora/antora:2.3.4 antora-playbook.yml
 
 You will run:
 
-    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t adito5393/antora-v2.3.4-lunr antora-playbook.yml
+    $ docker run -u $(id -u) -v $PWD:/antora:Z --rm -t ggrossetie/antora-lunr antora-playbook.yml
 
-The image sets `DOCSEARCH_ENABLED=true` and `DOCSEARCH_ENGINE=lunr` environment variables. When executing `docker run`, you can [overwrite any variable](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) defined in the image. For example:
+The image sets `DOCSEARCH_ENABLED=true` and `DOCSEARCH_ENGINE=lunr` environment variables.
+When executing `docker run`, you can [overwrite any variable](https://docs.docker.com/engine/reference/commandline/run/#set-environment-variables--e---env---env-file) defined in the image.
+For example:
 
     $ docker run --env DOCSEARCH_ENABLED=false # ...
 
@@ -51,7 +54,7 @@ Upgrading Antora alone isn't sufficient.
 To upgrade this site generator and Antora, open a terminal and type the following commands:
 
     $ npm uninstall -g antora-site-generator-lunr @antora/cli @antora/site-generator-default
-    
+
     $ npm i -g antora-site-generator-lunr @antora/cli @antora/site-generator-default
 
 These commands ensure you have the latest version of both the site generator and Antora regardless of whether you're using this site generator.
