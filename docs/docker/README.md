@@ -51,6 +51,26 @@ If for some reason you want to overidde this command you can use the `--entrypoi
 In the above example, we reset the container entrypoint using `--entrypoint=""` and then we can provide our own command.
 In this case, we are using the command `antora --version`.
 
+## Node modules
+
+Node modules are installed in `/usr/local/share/.config/yarn/global/node_modules`.
+
+As a result, the `supplemental_ui` directory from the npm package `antora-lunr` is available at:
+
+```
+/usr/local/share/.config/yarn/global/node_modules/antora-lunr/supplemental_ui
+```
+
+You can use this path to enable the search component in the default UI using the following definition in your playbook:
+
+```yaml
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: /usr/local/share/.config/yarn/global/node_modules/antora-lunr/supplemental_ui
+```
+
 ## Environment Variables
 
 The image sets `DOCSEARCH_ENABLED=true` and `DOCSEARCH_ENGINE=lunr` environment variables.
