@@ -84,4 +84,4 @@ When executing `docker run`, you can [overwrite any variable](https://docs.docke
 
 ## License
 
-MIT License. See [License](https://github.com/Mogztter/antora-site-generator-lunr/blob/master/LICENSE) for more details.
+MIT License. See [License](https://github.com/Mogztter/antora-site-generator-lunr/blob/main/LICENSE) for more details.
