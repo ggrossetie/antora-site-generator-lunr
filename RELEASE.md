@@ -6,7 +6,7 @@ How to perform a release.
 2. Run `npm version x.y.z` at the root of the repository
 3. Run `npm publish` to publish the version on https://www.npmjs.com
 4. **Wait until the version is successfully published and available for download**
-5. Push your changes with the tag: `git push origin master --tags`
+5. Push your changes with the tag: `git push origin main --tags`
 
 The release process is automated and relies on GitHub Actions.
 It will automatically publish the Docker image to hub.docker.com.
