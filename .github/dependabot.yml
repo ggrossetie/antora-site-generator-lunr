@@ -1,0 +1,19 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: fs-extra
+    versions:
+    - ">= 9.a, < 10"
+  - dependency-name: mocha
+    versions:
+    - 8.3.1
+  - dependency-name: chai
+    versions:
+    - 4.3.1
+    - 4.3.3
