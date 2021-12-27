@@ -1,3 +1,14 @@
+[antora-org]: https://www.gitlab.com/antora
+[new-repository]: https://gitlab.com/antora/antora-lunr-extension
+
+### :information_source: **Information** :information_source:
+
+If you are using Antora 3, you should use the [Antora Lunr extension](https://gitlab.com/antora/antora-lunr-extension) (package: `@antora/lunr-extension`), which is an official Antora project.
+
+This repository will go into maintenance mode for users who have not yet transitioned from Antora 2 to Antora 3. After some time, the repository will be archived.
+
+---
+
 # Antora Site Generator With Lunr
 
 [![npm](https://img.shields.io/npm/v/antora-site-generator-lunr)](https://www.npmjs.com/package/antora-site-generator-lunr)
