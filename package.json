@@ -19,7 +19,7 @@
   "optionalDependencies": {
     "@antora/asciidoc-loader": "~2",
     "@antora/content-aggregator": "~2",
-    "@antora/content-classifier": "~2",
+    "@antora/content-classifier": "~3",
     "@antora/document-converter": "~2",
     "@antora/navigation-builder": "~2",
     "@antora/page-composer": "~2",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "@antora/asciidoc-loader": "~2",
     "@antora/content-aggregator": "~2",
-    "@antora/content-classifier": "~2",
+    "@antora/content-classifier": "~3",
     "@antora/document-converter": "~2",
     "@antora/navigation-builder": "~2",
     "@antora/page-composer": "~2",
