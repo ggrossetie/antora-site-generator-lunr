@@ -17,7 +17,7 @@
     "test": "mocha test/test.js"
   },
   "optionalDependencies": {
-    "@antora/asciidoc-loader": "~2",
+    "@antora/asciidoc-loader": "~3",
     "@antora/content-aggregator": "~2",
     "@antora/content-classifier": "~2",
     "@antora/document-converter": "~2",
@@ -33,7 +33,7 @@
     "antora-lunr": "0.8.0"
   },
   "devDependencies": {
-    "@antora/asciidoc-loader": "~2",
+    "@antora/asciidoc-loader": "~3",
     "@antora/content-aggregator": "~2",
     "@antora/content-classifier": "~2",
     "@antora/document-converter": "~2",
